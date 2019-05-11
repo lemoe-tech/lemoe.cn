@@ -115,11 +115,11 @@
 			<script src="assets/js/main.js"></script>
 			<script type="text/javascript">
 			//player
-			window.onload = function(){
+			$(function(){
 				var p = document.getElementById("lplayer");
 				p.currentTime = 20;
 				p.play();
-			}
+			})
 			//get from github
 			window.onload = function(){
 				$.ajax({url:"https://api.github.com/orgs/lemoe-tech",
