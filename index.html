@@ -1,275 +1,153 @@
-<!doctype html>
-<html lang="zh_CN">
+<!DOCTYPE HTML>
+<!--
+	Dimension
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	https://github.com/lemoe-tech/lemoe.cn
+	Thanks to QC CDN
+-->
+<html>
+	<head>
+		<title>Lemoe Tech - 柠萌科技</title>
+		<meta charset="utf-8" />
+		<link rel="icon" href="//file-cdn.qmcmc.cn/assets/open/lemoe.cn/favicon.ico" type="image/icon">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="//file-cdn.qmcmc.cn/assets/open/lemoe.cn/assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="//file-cdn.qmcmc.cn/assets/open/lemoe.cn/assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
 
-<head>
-    <title> ~ Literature Club ~ </title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.loli.net/css?family=Courgette|Ma+Shan+Zheng&display=swap" rel="stylesheet">
-	<link rel="icon" href="https://file-cdn.qmcmc.cn/assets/open/%E6%96%87%E5%AD%A6.club/favicon.ico" type="image/icon">
-    <link rel="stylesheet" href="https://file-cdn.qmcmc.cn/assets/open/%E6%96%87%E5%AD%A6.club/assets/fonts/icomoon/style.css">
-    <link rel="stylesheet" href="https://file-cdn.qmcmc.cn/assets/open/%E6%96%87%E5%AD%A6.club/assets/css/APlayer.min.css">
-    <link rel="stylesheet" href="https://file-cdn.qmcmc.cn/assets/open/%E6%96%87%E5%AD%A6.club/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://file-cdn.qmcmc.cn/assets/open/%E6%96%87%E5%AD%A6.club/assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://file-cdn.qmcmc.cn/assets/open/%E6%96%87%E5%AD%A6.club/assets/fonts/flaticon/font/flaticon.css">
-    <link rel="stylesheet" href="https://file-cdn.qmcmc.cn/assets/open/%E6%96%87%E5%AD%A6.club/assets/css/aos.css">
-    <link rel="stylesheet" href="https://file-cdn.qmcmc.cn/assets/open/%E6%96%87%E5%AD%A6.club/assets/css/style.css">
-</head>
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-    <div id="aplayer">
-        <iframe src="https://vid.qmcmc.cn/assets/open/%E6%96%87%E5%AD%A6.club/assets/media/silence.mp3" allow="autoplay" id="audio" style="display: none;"></iframe>
-    </div>
-    <div id="overlayer"></div>
-    <div class="loader">
-        <div class="spinner-border text-primary" role="status">
-            <span class="sr-only">Loading...</span>
-        </div>
-    </div>
-    <div class="site-wrap">
-        <div class="site-mobile-menu site-navbar-target">
-            <div class="site-mobile-menu-header">
-                <div class="site-mobile-menu-close mt-3">
-                    <span class="icon-close2 js-menu-toggle"></span>
-                </div>
-            </div>
-            <div class="site-mobile-menu-body"></div>
-        </div>
-        <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-6 col-xl-2">
-                        <h1 class="mb-0 site-logo"><a href="/" class="h2 mb-0"
-                                style="font-family: 'Courgette', cursive;">Literature<span class="
-                                text-primary">.</span>
-                            </a></h1>
-                    </div>
-                    <div class="col-12 col-md-10 d-none d-xl-block">
-                        <nav class="site-navigation position-relative text-right" role="navigation">
-                            <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                                <li><a href="/#home-section" class="nav-link" data-lang="HOME">首页</a></li>
-                                <li class="has-children">
-                                    <a href="/#about-section" class="nav-link" data-lang="ABOUT">关于</a>
-                                    <ul class="dropdown">
-                                        <li><a href="/#team-section" class="nav-link" data-lang="MEMBER">成员</a></li>
-                                        <li><a href="/#faq-section" class="nav-link" data-lang="FAQ">FAQ</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="https://xn--2qq64k.xn--48sp9u.club/" target="_blank"
-                                        data-lang="WORKS">作品</a></li>
-                                <li><a href="/#site-section" class="nav-link" data-lang="FEATURE">Feature</a></li>
-                                <li><a href="/#contact-section" class="nav-link" data-lang="CONTACT">联系</a></li>
-                                <li class="has-children">
-                                    <a href="/#i18n" class="nav-link" data-target="#collapseItem1"
-                                        data-toggle="collapse">Language</a>
-                                    <ul class="dropdown">
-                                        <li><a href="/#zh_CN" class="nav-link">🇨🇳 简体中文</a></li>
-                                        <li><a href="/#zh_TW" class="nav-link">🇭🇰 🇨🇳 繁體中文</a></li>
-                                        <li><a href="/#en" class="nav-link">🇺🇸 English</a></li>
-                                        <li><a href="/#ja" class="nav-link">🇯🇵 日本語</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a
-                            href="/#" class="site-menu-toggle js-menu-toggle float-right"><span
-                                class="icon-menu h3"></span></a></div>
-                </div>
-            </div>
-        </header>
-    </div>
-    <div class="site-blocks-cover overlay" style="background-image: url(https://file-cdn.qmcmc.cn/assets/open/%E6%96%87%E5%AD%A6.club/assets/images/hero_2.jpg);" data-aos="fade"
-        id="home-section">
-        <div class="container">
-            <div class="row align-items-center justify-content-center">
-                <div class="col-md-8 mt-lg-5 text-center">
-                    <h1 data-lang="WELCOME_TO_LITERATURE_CLUB" class="text-uppercase" data-aos="fade-up">
-                        Welcome to Literature Club
-                    </h1>
-                    <p id="hitokoto" class="mb-5 desc" data-aos="fade-up" data-aos-delay="100"
-                        style="font-family: 'Ma Shan Zheng', 'Noto Sans TC', 'Noto Sans JP', cursive;"
-                        data-lang="DEFAULT_HITOKOTO">
-                        欢迎来到FXSHLC文学社！
-                    </p>
-                    <div data-aos="fade-up" data-aos-delay="100">
-                        <a href="/#about-section" class="btn smoothscroll btn-primary mr-2 mb-2"
-                            data-lang="LEARN_MORE">了解更多</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <a href="/#about-section" class="mouse smoothscroll">
-            <span class="mouse-icon">
-                <span class="mouse-wheel"></span>
-            </span>
-        </a>
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<span class="icon fa-lemon-o"></span>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1>柠萌科技</h1>
+								<p>一个充满爱❤与激♂情的组织，等待你的加入…… (｡･∀･)ﾉﾞ</p>
+								“<p id="github-bio"></p>”
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<!-- <li><a href="#intro">了解一下</a></li> -->
+								<li><a href="#works">作品</a></li>
+								<li><a href="#about">关于</a></li>
+								<li><a href="#contact">联系我们</a></li>
+							</ul>
+						</nav>
+					</header>
 
-        <div class="site-section cta-big-image" id="about-section">
-            <div class="container">
-                <div class="row mb-5">
-                    <div class="col-12 text-center" data-aos="fade">
-                        <h2 class="section-title mb-3" data-lang="ABOUT_US">关于我们</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
-                        <figure class="circle-bg">
-                            <img data-src="https://file-cdn.qmcmc.cn/assets/open/%E6%96%87%E5%AD%A6.club/assets/images/sakura.jpg" alt="FXSHLC文学部" class="lazyload img-fluid">
-                        </figure>
-                    </div>
-                    <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
-                        <div class="mb-4">
-                            <h3 class="h3 mb-4 text-black" data-lang="ABOUT_US_TITLE">一个年轻向上&向往苍穹的社团</h3>
-                            <p data-lang="ABOUT_US_DETAIL">FXSHLC文学部是一个开放、自由、协作的社团.</p>
-                        </div>
-                        <div class="mb-4">
-                            <ul class="list-unstyled ul-check success">
-                                <li data-lang="ABOUT_US_DETAIL_ONE">交流分享文学艺术</li>
-                                <li data-lang="ABOUT_US_DETAIL_TWO">自由创作&发表作品</li>
-                                <li data-lang="ABOUT_US_DETAIL_THREE">等待您的加入……</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div style="display: none;">
-            <section class="site-section" id="site-section">
-                <div class="container">
-                    <div class="row mb-5 justify-content-center">
-                        <div class="col-md-7 text-center">
-                            <h2 class="section-title mb-3" data-aos="fade-up" data-aos-delay="">Our Features</h2>
-                            <p class="lead" data-aos="fade-up" data-aos-delay="100">Lorem ipsum dolor sit amet
-                                consectetur
-                                adipisicing elit. Minus minima neque tempora reiciendis.</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
-                            <div class="owl-carousel slide-one-item-alt">
-                                <img data-src="https://file-cdn.qmcmc.cn/assets/open/%E6%96%87%E5%AD%A6.club/assets/images/slide_1.jpg" alt="Image" class="lazyload img-fluid">
-                                <img data-src="https://file-cdn.qmcmc.cn/assets/open/%E6%96%87%E5%AD%A6.club/assets/images/slide_2.jpg" alt="Image" class="lazyload img-fluid">
-                                <img data-src="https://file-cdn.qmcmc.cn/assets/open/%E6%96%87%E5%AD%A6.club/assets/images/slide_3.jpg" alt="Image" class="lazyload img-fluid">
-                            </div>
-                            <div class="custom-direction">
-                                <a href="#" class="custom-prev"><span><span
-                                            class="icon-keyboard_backspace"></span></span></a><a href="#"
-                                    class="custom-next"><span><span class="icon-keyboard_backspace"></span></span></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
-                            <div class="owl-carousel slide-one-item-alt-text">
-                                <div>
-                                    <h2 class="section-title mb-3">Minimal and Modern Design</h2>
-                                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                    <p>Est qui eos quasi ratione nostrum excepturi id recusandae fugit omnis ullam
-                                        pariatur
-                                        itaque nisi voluptas impedit Quo suscipit omnis iste velit maxime.</p>
-                                    <p><a href="#" class="btn btn-primary mr-2 mb-2">Learn More</a></p>
-                                </div>
-                                <div>
-                                    <h2 class="section-title mb-3">Do things with love</h2>
-                                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                    <p>Est qui eos quasi ratione nostrum excepturi id recusandae fugit omnis ullam
-                                        pariatur
-                                        itaque nisi voluptas impedit Quo suscipit omnis iste velit maxime.</p>
-                                    <p><a href="#" class="btn btn-primary mr-2 mb-2">Learn More</a></p>
-                                </div>
-                                <div>
-                                    <h2 class="section-title mb-3">Take your business online</h2>
-                                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                    <p>Est qui eos quasi ratione nostrum excepturi id recusandae fugit omnis ullam
-                                        pariatur
-                                        itaque nisi voluptas impedit Quo suscipit omnis iste velit maxime.</p>
-                                    <p><a href="#" class="btn btn-primary mr-2 mb-2">Learn More</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <footer class="site-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-9">
-                        <div class="row">
-                            <div class="col-md-5">
-                                <h2 class="footer-heading mb-4" data-lang="FOOTER_ABOUT_THE_SITE">关于本站</h2>
-                                <p data-lang="FOOTER_ABOUT_THE_SITE_DETAIL">本站为極東魔術昼寝文学部的官方网站，图片提供致谢<a
-                                        href="https://www.pixiv.net/users/30795/artworks" target="_blank">フタバ</a>、<a
-                                        href="https://twitter.com/hanekoto2424" target="_blank">はねこと</a>。文案致谢：<a
-                                        href="https://developer.hitokoto.cn/sentence/" target="_blank">一言</a>。
-                                </p>
-                            </div>
-                            <div class="col-md-3 ml-auto">
-                                <h2 class="footer-heading mb-4" data-lang="QUICK_ACCESS">快捷访问</h2>
-                                <ul class="list-unstyled">
-                                    <li><a href="/#home-section" class="smoothscroll"
-                                            data-lang="QUICK_ACCESS_HOME">首页</a>
-                                    </li>
-                                    <li><a href="https://xn--2qq64k.xn--48sp9u.club/" target="_blank"
-                                            data-lang="QUICK_ACCESS_WORKS">作品</a></li>
-                                    <li><a href="/#about-section" class="smoothscroll"
-                                            data-lang="QUICK_ACCESS_ABOUT">关于</a>
-                                    </li>
-                                    <li><a href="/docs" class="smoothscroll"
-                                            data-lang="QUICK_ACCESS_REGULATION">《文学社纲领》</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-md-3">
-                                <h2 class="footer-heading mb-4" data-lang="FOLLOW_US">关注我们</h2>
-                                <!-- <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
-                                <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
-                                <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
-                                <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a> -->
-                                <p data-lang="FOLLOW_US_NOT_AVAILABLE">暂不支持</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <h2 class="footer-heading mb-4" data-lang="SUBSCRIBE">订阅</h2>
-                        <a href="https://xn--2qq64k.xn--48sp9u.club/feed.xml" data-lang="SUBSCRIBE_RSS">RSS Feed</a>
-                    </div>
-                </div>
-                <div class="row pt-5 mt-5 text-center">
-                    <div class="col-md-12">
-                        <div class="border-top pt-5">
-                            <p>
+				<!-- Main -->
+					<div id="main">
 
-                                Copyright &copy
-                                <a id="year">2020</a> All rights reserved |
-                                Made by
-                                <a href="https://nyaruko.love" target="_blank">Nyaruko</a> With ❤️
+						<!-- Works -->
+							<article id="works">
+								<h2 class="major">Works</h2>
+								<p id="works-list">加载中...</p>
+							</article>
 
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-100755509-15"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'UA-100755509-15');
-    </script>
-    <script src="https://file-cdn.qmcmc.cn/assets/open/%E6%96%87%E5%AD%A6.club/assets/js/jquery-3.4.1.min.js"></script>
-    <script src="https://file-cdn.qmcmc.cn/assets/open/%E6%96%87%E5%AD%A6.club/assets/js/owl.carousel.min.js"></script>
-    <script src="https://file-cdn.qmcmc.cn/assets/open/%E6%96%87%E5%AD%A6.club/assets/js/aos.js"></script>
-    <script src="https://file-cdn.qmcmc.cn/assets/open/%E6%96%87%E5%AD%A6.club/assets/js/bootstrap.min.js"></script>
-    <script src="https://file-cdn.qmcmc.cn/assets/open/%E6%96%87%E5%AD%A6.club/assets/js/APlayer.min.js"></script>
-    <script src="https://file-cdn.qmcmc.cn/assets/open/%E6%96%87%E5%AD%A6.club/assets/js/sweetalert2.all.min.js"></script>
-    <script src="https://file-cdn.qmcmc.cn/assets/open/%E6%96%87%E5%AD%A6.club/assets/js/jquery.sticky.js"></script>
-    <script src="https://file-cdn.qmcmc.cn/assets/open/%E6%96%87%E5%AD%A6.club/assets/js/lazysizes.min.js"></script>
-    <script src="https://file-cdn.qmcmc.cn/assets/open/%E6%96%87%E5%AD%A6.club/assets/js/i18n/i18n.js"></script>
-    <script src="https://file-cdn.qmcmc.cn/assets/open/%E6%96%87%E5%AD%A6.club/assets/js/main.js"></script>
+						<!-- About -->
+							<article id="about">
+								<h2 class="major">About</h2>
+								<span class="image main"><img src="//file-cdn.qmcmc.cn/assets/open/lemoe.cn/images/66580541.jpg" alt="AW$L" /></span>
+								<p>一个充满脑洞&基♂情&热情的二次元开发小组。<br />
+									本小组目前有<a id="github-members">∞</a>位成员，在github有<a id="github-repo-num">∞</a>个开源项目。<br />
+								</p>
+							</article>
 
-</body>
+						<!-- Contact -->
+							<article id="contact">
+								<h2 class="major">Contact</h2>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name" value="柠萌酱" readonly="readonly"/>
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="text" name="email" id="email" value="???" readonly="readonly" />
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="4" readonly="readonly">只要你怀揣一颗充满激情♂的心，就可以加入我们啦！嘿嘿嘿(●ˇ∀ˇ●)</textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="button" value="好的" /></li>
+										<li><input type="reset" value="算了" /></li>
+									</ul>
+								</form>
+								<ul class="icons">
+									<li><a class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+									<li><a href="https://t.me/lemoe_tech" class="icon fa-paper-plane" target="_blank"><span class="label">Telegram</span></a></li>
+									<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="https://github/lemoe-tech" class="icon fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+								</ul>
+							</article>
+					</div>
 
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; <a href="https://github/lemo-tech" target="_blank">lemoe.cn</a>. &nbsp;
+							 Design: HTML5 UP & <a href="https://github.com/qcminecraft" target="_blank">qcminecraft</a> 
+							 & Image: <a href="https://www.pixiv.net/member_illust.php?mode=medium&illust_id=73960040" target="_blank">mocha</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Player-->
+			<div id="player">
+				<iframe src="//vid.qmcmc.cn/assets/open/lemoe.cn/assets/media/silence.mp3" allow="autoplay" id="audio"></iframe>
+				<audio id="lplayer" src="//vid.qmcmc.cn/assets/open/lemoe.cn/assets/media/ほたる火.mp3" loop="loop" style="display:none;" autoplay="autoplay"></audio>
+			</div>
+
+		<!-- Scripts -->
+			<script src="//file-cdn.qmcmc.cn/assets/open/lemoe.cn/assets/js/jquery.min.js"></script>
+			<script src="//file-cdn.qmcmc.cn/assets/open/lemoe.cn/assets/js/browser.min.js"></script>
+			<script src="//file-cdn.qmcmc.cn/assets/open/lemoe.cn/assets/js/breakpoints.min.js"></script>
+			<script src="//file-cdn.qmcmc.cn/assets/open/lemoe.cn/assets/js/util.js"></script>
+			<script src="//file-cdn.qmcmc.cn/assets/open/lemoe.cn/assets/js/main.js"></script>
+			<script type="text/javascript">
+			//player
+			$(function(){
+				var p = document.getElementById("lplayer");
+				p.currentTime = 20;
+				p.play();
+			})
+			//get from github
+			window.onload = function(){
+				$.ajax({url:"https://api.github.com/orgs/lemoe-tech",
+					success: function(result){
+						$("#github-bio").html(result.description);
+						$("#github-repo-num").html(result.public_repos);
+						$("#email").val(result.email);
+						
+					}
+				});
+				$.ajax({url:"https://api.github.com/orgs/lemoe-tech/repos",
+					success: function(result){
+						$("#works-list").html(null);
+						for(var i=0; i<result.length; ++i){
+							let conte = "<a href='"+ result[i].html_url +"' target='_blank'>lemoe-tech/"+result[i].name+"</a> -- <a href='"+ result[i].homepage +"' target='_blank'>"+ result[i].description +"</a><br />";
+							$("#works-list").append(conte);
+						}
+					}
+				});
+				$.ajax({url:"https://api.github.com/orgs/lemoe-tech/members",
+					success: function(result){
+						$("#github-members").html(result.length);
+					}
+				});
+			}
+			</script>
+	</body>
 </html>
